@@ -1,0 +1,98 @@
+---
+title: Register | Coding Home
+layout: ./app/layout2.ejs
+engine: ejs
+---
+
+<section class="bar">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-10">
+                <ul class="bar-list list-unstyled mb-0 row align-items-center pt-5 pb-3 text-gray">
+                    <li class="col-4 bar-item position-relative active" data-bar="1">課程報名</li>
+                    <li class="col-4 bar-item text-center position-relative" data-bar="2">信用卡付款</li>
+                    <li class="col-4 bar-item text-end position-relative" data-bar="3">付款成功</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="register bg-dark">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-11">
+                <div class="row flex-column flex-lg-row">
+                    <div class="col-lg-4 position-relative d-lg-flex align-items-center mb-5 mb-lg-0">
+                        <div class="p-register-card w-100 position-relative register-shadow">
+                            <img src="./assets/images/teacher01.jpg" alt="teacher01" class="rounded-circle mx-auto mb-3 mb-lg-4 border border-primary border-3" width="100">
+                            <h3 class="fs-18 fw-bold text-center mb-2 mb-lg-1">2022 Python 全攻略｜從入門到實務</h3>
+                            <h4 class="h6 text-primary text-center mb-2">前端語言</h4>
+                            <p>帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 position-relative">
+                        <div class="register-form bg-dark-900 register-shadow">
+                            <h2 class="h4 fw-bold text-center mb-5 lh-base">課程報名</h2>
+                            <h3 class="fs-18 fw-bold lh-base text-center text-lg-start mb-2">選擇付款方式</h3>
+                            <ul class="row row-cols-2 row-cols-lg-5 g-2 list-unstyled text-center mb-32">
+                                <li class="col"><a href="#"
+                                        class="py-3 btn btn-outline-light rounded-8 d-block">信用卡付款</a></li>
+                                <li class="col"><a href="#"
+                                        class="py-3 btn btn-outline-light rounded-8 d-block">超商繳款</a></li>
+                                <li class="col"><a href="#"
+                                        class="py-3 btn btn-outline-light rounded-8 d-block">ATM轉帳</a></li>
+                                <li class="col"><a href="#"
+                                        class="py-3 btn btn-outline-light rounded-8 d-block">12期分期付款</a></li>
+                            </ul>
+                            <h3 class="fs-18 fw-bold lh-base text-center text-lg-start mb-md-4 mb-3">訂單資訊</h3>
+                            <form>
+                                <div class="row row-cols-1 row-cols-lg-2 mb-3 mb-lg-4">
+                                    <div class="col mb-3 mb-lg-0">
+                                        <label for="name" class="form-label text-gray">姓名</label>
+                                        <input type="text" id="name" class="form-control py-2 px-3" placeholder="請輸入姓名">
+                                    </div>
+                                    <div class="col">
+                                        <label for="tel" class="form-label text-gray">電話</label>
+                                        <input type="tel" id="tel" class="form-control py-2 px-3" placeholder="請輸入電話號碼">
+                                    </div>
+                                </div>
+                                <div class="mb-3 mb-lg-4">
+                                    <label for="email" class="form-label text-gray">Email</label>
+                                    <input type="email" id="email" class="form-control py-2 px-3"
+                                        placeholder="請輸入Email">
+                                </div>
+                                <div class="row row-cols-1 row-cols-lg-2 mb-3 mb-lg-4">
+                                    <div class="col mb-3 mb-lg-0">
+                                        <label for="courses" class="form-label text-gray">課程</label>
+                                        <select class="form-select py-2 px-3" aria-label="select courses" id="courses">
+                                            <option selected>10堂50分鐘</option>
+                                            <option value="1">1堂50分鐘</option>
+                                            <option value="2">3堂50分鐘</option>
+                                            <option value="3">20堂50分鐘</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="datepicker" class="form-label text-gray">想預約的日期</label>
+                                        <input type="text" name="datepicker" class="form-control text-light"
+                                            placeholder="請選擇日期">
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="location" class="form-label text-gray">上課地點</label>
+                                    <input type="text" id="location" class="form-control py-2 px-3"
+                                        placeholder="請輸入上課地點">
+                                </div>
+                                <div class="d-lg-flex justify-content-between align-items-center">
+                                    <p class="fs-18 font-mono mb-4 mb-lg-0">NT$1600</p>
+                                    <a href="./checkout.html"
+                                        class="btn btn-gradient link-light rounded-8 px-lg-5 py-lg-2 w-btn">前往結賬</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+.checkout {
+    padding-top: 48px;
+    padding-bottom: 80px;
+
+    @media(max-width:992px) {
+        padding: 24px;
+        padding-bottom: 40px;
+    }
+}
+
+.p-checkout-card {
+    padding: 48px 32px;
+
+    @media(max-width:992px) {
+        padding: 24px;
+    }
+}

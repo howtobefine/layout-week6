@@ -1,0 +1,57 @@
+.footer {
+    background-color: #1a1a1a;
+    color: #909090;
+}
+
+.p-modal-content {
+    padding: 24px 150px 48px;
+
+    @media(max-width:992px) {
+        padding: 40px 24px;
+    }
+}
+
+.btn-close {
+    top: 6.13%;
+    right: 4.16%;
+}
+
+.p-modal-body {
+    padding-top: 32px;
+    padding-bottom: 48px;
+
+    @media(max-width:768px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+.login-title {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 32%;
+        height: 1px;
+        background-color: #c1c1c1;
+        top: 12px;
+        left: 0;
+
+        @media(max-width:576px) {
+            width: 26%;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 32%;
+        height: 1px;
+        background-color: #c1c1c1;
+        top: 12px;
+        right: 0;
+
+        @media(max-width:576px) {
+            width: 26%;
+        }
+    }
+}

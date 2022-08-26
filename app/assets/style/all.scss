@@ -2,5 +2,15 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import './base';
+@import './helpers/customize';
+@import './helpers/mixin';
 
-@import './layout/index.scss'
+@import './layout/layout';
+
+@import './pages/index';
+@import './pages/courses';
+@import './pages/f2e';
+@import './pages/register';
+@import './pages/checkout';
+@import './pages/success';

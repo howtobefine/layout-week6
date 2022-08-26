@@ -1,0 +1,55 @@
+.p-f2e-list {
+    padding: 48px;
+
+    @media(max-width:992px) {
+        padding: 24px 24px 48px 24px;
+    }
+}
+
+.p-f2e-aside {
+    padding: 40px 32px;
+
+    @media(max-width:992px) {
+        padding: 40px 24px;
+    }
+}
+
+.p-f2e-intro {
+    padding: 32px;
+
+    @media(max-width:992px) {
+        padding: 24px;
+    }
+}
+
+.mb-f2e-list {
+    margin-bottom: 48px;
+
+    @media(max-width:992px) {
+        margin-bottom: 40px;
+    }
+}
+
+.my-f2e-hr {
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    @media(max-width:992px) {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+.mb-f2e-courses-title {
+    margin-bottom: 64px;
+
+    @media(max-width:992px) {
+        margin-bottom: 40px;
+    }
+}
+
+.aside-list:hover {
+    .aside-text {
+        color: $primary;
+    }
+}

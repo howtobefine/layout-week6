@@ -1,0 +1,202 @@
+.text-gradient {
+    @supports (background-clip: text) {
+        background-image: linear-gradient(180deg,
+                $secondary, $primary);
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+.p-intro {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media(max-width:576px) {
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+}
+
+.p-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media(max-width:576px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.mb-process-title {
+    margin-bottom: 90px;
+
+    @media(max-width:576px) {
+        margin-bottom: 66px;
+    }
+}
+
+.mb-language-title {
+    margin-bottom: 64px;
+
+    @media(max-width:576px) {
+        margin-bottom: 40px;
+    }
+}
+
+.title-border::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: $primary;
+    bottom: -16px;
+    left: 48%;
+
+    @media(max-width:1400px) {
+        left: 47.2%;
+    }
+
+    @media(max-width:992px) {
+        left: 46.2%;
+    }
+
+    @media(max-width:768px) {
+        left: 45.2%;
+    }
+
+    @media(max-width:576px) {
+        left: 45%;
+    }
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, $secondary, $primary);
+    border: transparent;
+    transition: opacity .15s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-gradient-vertical {
+    background: linear-gradient(180deg, $secondary, $primary);
+    border: transparent;
+    transition: opacity .15s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-opacity {
+    transition: opacity .15s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.bar {
+    background-color: #1c1c1c;
+    @media(max-width:992px) {
+        background-color: #000;
+    }
+}
+
+.bar-item {
+    background-color: #1c1c1c;
+    @media(max-width:992px) {
+        background-color: #000;
+    }
+
+    &::before {
+        content: attr(data-bar) " ";
+        display: block;
+        text-align: center;
+        position: absolute;
+        font-size: 12px;
+        font-family: 'Azeret Mono', monospace;
+        width: 20px;
+        background-color: #1c1c1c;
+        border: 1px solid #c1c1c1;
+        border-radius: 50%;
+        z-index: 5;
+        top: -24px;
+    }
+
+    &:first-child::before {
+        left: 32px;
+    }
+
+    &:nth-child(2)::before {
+        left: 47%;
+    }
+
+    &:last-child::before {
+        right: 36px;
+    }
+
+    &:first-child::after {
+        content: '';
+        position: absolute;
+        width: 135%;
+        height: 2px;
+        background-color: #c1c1c1;
+        top: -14px;
+        left: 15%;
+        z-index: 1;
+
+        @media(max-width:768px) {
+            left: 20%;
+        }
+
+        @media(max-width:576px) {
+            left: 30%;
+        }
+    }
+
+    &:nth-child(2)::after {
+        content: '';
+        position: absolute;
+        width: 135%;
+        height: 2px;
+        background-color: #c1c1c1;
+        top: -14px;
+        left: 49%;
+        z-index: 1;
+
+        @media(max-width:768px) {
+            left: 45%;
+        }
+
+        @media(max-width:576px) {
+            left: 30%;
+        }
+    }
+}
+
+.bar-item.success {
+    color: $primary;
+
+    &::before {
+        content: '✓';
+        color: $light;
+        background-color: $primary;
+        border-color: $primary;
+    }
+
+    &::after {
+        background-color: $primary;
+    }
+}
+
+.bar-item.active {
+    color: $primary;
+
+    &::before {
+        color: $light;
+        background-color: $primary;
+        border-color: $primary;
+    }
+}

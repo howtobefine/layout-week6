@@ -1,0 +1,114 @@
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.px-32 {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.p-32 {
+    padding: 32px;
+}
+
+.ps-32 {
+    padding-left: 32px;
+}
+
+.pe-56 {
+    padding-right: 56px;
+}
+
+.mb-28 {
+    margin-bottom: 28px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-lg-32 {
+    @media(min-width:992px) {
+        margin-bottom: 32px;
+    }
+}
+
+.mb-38 {
+    margin-bottom: 38px;
+}
+
+.mb-64 {
+    margin-bottom: 64px;
+}
+
+.mb-90 {
+    margin-bottom: 90px;
+}
+
+.font-mono {
+    font-family: 'Azeret Mono', monospace;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
+.rounded-8 {
+    border-radius: 8px;
+}
+
+.rounded-12 {
+    border-radius: 12px;
+}
+
+.rounded-24 {
+    border-radius: 24px;
+}
+
+.bg-dark-900 {
+    background-color: #1c1c1c;
+}
+
+.text-share {
+    color: #494755;
+}
+
+.text-gray {
+    color: #c1c1c1;
+}
+
+.list-square::before {
+    content: '▪';
+    color: $primary;
+}
+
+.datepicker-main {
+    color: #1c1c1c;
+}
+
+.datepicker-cell.selected {
+    background-color: $primary !important;
+}
+
+.w-btn {
+    @media(max-width:976px) {
+        width: 100%;
+    }
+}
+
+.register-shadow {
+    box-shadow: 0 4px 18px #0000002E;
+}
+
+.vh-75 {
+    height: 75vh;
+}
