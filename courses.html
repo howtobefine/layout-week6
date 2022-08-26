@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Courses | Coding Home
+  </title>
+  <link rel="shortcut icon" href="./assets/images/logo2.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Noto+Sans+TC:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info py-20 flex-column">
+    <div class="container">
+      <a class="navbar-brand pe-5" href="./index.html">
+        <img src="./assets/images/logo.svg" alt="logo" width="170" class="d-none d-lg-block">
+        <img src="./assets/images/logo2.svg" alt="mobile logo" width="24" class="d-lg-none">
+      </a>
+      <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon d-none"></span>
+        <span class="material-icons text-primary">
+          menu
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-0 fs-18 align-items-center align-items-lg-start">
+          <li class="nav-item">
+            <a class="nav-link px-lg-4 py-4 py-lg-2" href="./index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-lg-4 py-4 py-lg-2 active" aria-current="page" href="./courses.html">課程介紹</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-lg-4 pe-0 d-flex py-4 py-lg-2" href="#" data-bs-toggle="modal"
+            data-bs-target="#signInModal">
+              <span class="material-icons me-2 fs-5">
+                account_circle
+              </span>
+              <span>
+                登入
+              </span>
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-info rounded-0 position-absolute p-modal-content border">
+                  <a class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close" href="#"></a>
+                  <h6 class="modal-title h4 fw-bold text-center">登入</h6>
+                  <div class="modal-body p-modal-body px-0">
+                    <form>
+                      <div class="mb-3 mb-lg-4">
+                        <label for="signInEmail" class="form-label fs-6 text-gray">信箱</label>
+                        <input type="email" class="form-control px-3 py-2" id="signInEmail" placeholder="請輸入信箱">
+                      </div>
+                      <div class="mb-3 mb-lg-4">
+                        <label for="signInPassword" class="form-label fs-6 text-gray">密碼</label>
+                        <input type="password" class="form-control px-3 py-2" id="signInPassword" placeholder="請輸入密碼">
+                      </div>
+                    </form>
+                    <a href="#" class="btn btn-gradient text-light w-100 py-2 rounded-8">登入</a>
+                  </div>
+                  <div class="text-center position-relative">
+                    <h6 class="login-title text-gray mb-3">其他登入方式</h6>
+                    <a href="#" class="text-light border rounded-2 btn-opacity py-2 ps-32 pe-56 mb-4 d-flex align-items-center justify-content-between">
+                      <img src="./assets/images/icon_fb.svg" alt="#" width="24" class="d-inline-block text-start">
+                      <span class="fs-6">Facebook登入</span>
+                      <div></div>
+                    </a>
+                    <a href="#" class="text-light border rounded-2 btn-opacity py-2 ps-32 pe-56 d-flex align-items-center justify-content-between">
+                      <img src="./assets/images/icon_google.svg" alt="#" width="24" class="d-inline-block text-start">
+                      <span class="fs-6">Google登入</span>
+                      <div></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 border-top border-2 border-primary"></div>
+      <div class="col-6 border-top border-2 border-secondary"></div>
+    </div>
+  </div>
+
+
+
+  
+<main class="bg-dark-900">
+    <div class="container p-courses">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <ul class="list-unstyled mb-0 d-flex align-items-center gap-3 overflow-auto text-nowrap mb-5">
+                    <li><a href="#" class="btn btn-outline-primary px-32 py-3 rounded-8">所有課程</a></li>
+                    <li><a href="#" class="btn btn-outline-light px-32 py-3 rounded-8">行動應用開發</a></li>
+                    <li><a href="#" class="btn btn-outline-light px-32 py-3 rounded-8">資料庫/資料科學</a></li>
+                    <li><a href="#" class="btn btn-outline-light px-32 py-3 rounded-8">前端語言</a></li>
+                    <li><a href="#" class="btn btn-outline-light px-32 py-3 rounded-8">後端語言</a></li>
+                    <li><a href="#" class="btn btn-outline-light px-32 py-3 rounded-8">作業系統與伺服器</a></li>
+                </ul>
+                <ul class="list-unstyled mb-0 d-flex flex-column g-courses-list">
+                    <li class="d-flex flex-column flex-lg-row bg-info p-courses-list rounded-24">
+                        <div class="flex-shrink-0 text-center">
+                            <img src="./assets/images/teacher01.jpg" alt="teacher01" class="rounded-circle mb-2 mx-auto"
+                                width="100">
+                            <span>Belinda</span>
+                        </div>
+                        <div class="flex-grow-1 mb-5 mb-lg-0 ms-lg-5">
+                            <h2 class="h4 fw-bold mb-1 lh-base">基礎前端 - HTML</h2>
+                            <h3 class="h6 text-primary mb-2 lh-base">前端語言</h3>
+                            <p>帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言<br>與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+                        </div>
+                        <div class="flew-shrink-0">
+                            <p
+                                class="d-flex flex-row flex-lg-column text-center mb-3 justify-content-center align-items-center">
+                                50分鐘<span class="fs-32 font-mono mt-1 lh-sm ms-2 ms-lg-0">NT$1600</span></p>
+                            <div class="d-flex flex-row flex-lg-column text-nowrap justify-content-center">
+                                <a href="./f2e.html"
+                                    class="btn btn-outline-light p-courses-btn fs-18 rounded-8 mb-0 mb-lg-2 me-2 me-lg-0">課程介紹</a>
+                                <a href="./register.html" class="btn btn-gradient text-light p-courses-btn fs-18 rounded-8">立即預約</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column flex-lg-row bg-info p-courses-list rounded-24">
+                        <div class="flex-shrink-0 text-center">
+                            <img src="./assets/images/teacher02.jpg" alt="teacher02" class="rounded-circle mb-2 mx-auto"
+                                width="100">
+                            <span>Guava</span>
+                        </div>
+                        <div class="flex-grow-1 mb-5 mb-lg-0 ms-lg-5">
+                            <h2 class="h4 fw-bold mb-1 lh-base">2022 Python 全攻略｜從入門到實務</h2>
+                            <h3 class="h6 text-primary mb-2 lh-base">後端語言</h3>
+                            <p>Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導<br>向程式設計，它擁有動態型別系統和垃圾回收功能，能夠自動管理記憶體使用，本<br>堂課帶你無痛入門，開發簡單的應用！
+                            </p>
+                        </div>
+                        <div class="flew-shrink-0">
+                            <p
+                                class="d-flex flex-row flex-lg-column text-center mb-3 justify-content-center align-items-center">
+                                50分鐘<span class="fs-32 font-mono mt-1 lh-sm ms-2 ms-lg-0">NT$2000</span></p>
+                            <div class="d-flex flex-row flex-lg-column text-nowrap justify-content-center">
+                                <a href="#"
+                                    class="btn btn-outline-light p-courses-btn fs-18 rounded-8 mb-0 mb-lg-2 me-2 me-lg-0">課程介紹</a>
+                                <a href="#" class="btn btn-gradient text-light p-courses-btn fs-18 rounded-8">立即預約</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column flex-lg-row bg-info p-courses-list rounded-24">
+                        <div class="flex-shrink-0 text-center">
+                            <img src="./assets/images/teacher03.jpg" alt="teacher03" class="rounded-circle mb-2 mx-auto"
+                                width="100">
+                            <span>Joe</span>
+                        </div>
+                        <div class="flex-grow-1 mb-5 mb-lg-0 ms-lg-5">
+                            <h2 class="h4 fw-bold mb-1 lh-base">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h2>
+                            <h3 class="h6 text-primary mb-2 lh-base">行動應用開發</h3>
+                            <p>Line Bot
+                                可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自<br>然語言處理系統，但大多簡單的系統只會擷取輸入的關鍵字，再從語料庫中找尋最<br>合適的應答句，本堂課會帶你了解
+                                Line Bot 如何結合其他工具的應用。</p>
+                        </div>
+                        <div class="flew-shrink-0">
+                            <p
+                                class="d-flex flex-row flex-lg-column text-center mb-3 justify-content-center align-items-center">
+                                50分鐘<span class="fs-32 font-mono mt-1 lh-sm ms-2 ms-lg-0">NT$1800</span></p>
+                            <div class="d-flex flex-row flex-lg-column text-nowrap justify-content-center">
+                                <a href="#"
+                                    class="btn btn-outline-light p-courses-btn fs-18 rounded-8 mb-0 mb-lg-2 me-2 me-lg-0">課程介紹</a>
+                                <a href="#" class="btn btn-gradient text-light p-courses-btn fs-18 rounded-8">立即預約</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column flex-lg-row bg-info p-courses-list rounded-24">
+                        <div class="flex-shrink-0 text-center">
+                            <img src="./assets/images/teacher04.jpg" alt="teacher04" class="rounded-circle mb-2 mx-auto"
+                                width="100">
+                            <span>Lina</span>
+                        </div>
+                        <div class="flex-grow-1 mb-5 mb-lg-0 ms-lg-5">
+                            <h2 class="h4 fw-bold mb-1 lh-base">Linux 零基礎七天入門｜入門到實務</h2>
+                            <h3 class="h6 text-primary mb-2 lh-base">作業系統與伺服器</h3>
+                            <p>Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者<br>圖形介面和其他實用工具。課程會一步一步帶著你走，讓你能夠從頭開始學習程式<br>語言的基本語法
+                            </p>
+                        </div>
+                        <div class="flew-shrink-0">
+                            <p
+                                class="d-flex flex-row flex-lg-column text-center mb-3 justify-content-center align-items-center">
+                                50分鐘<span class="fs-32 font-mono mt-1 lh-sm ms-2 ms-lg-0">NT$1600</span></p>
+                            <div class="d-flex flex-row flex-lg-column text-nowrap justify-content-center">
+                                <a href="#"
+                                    class="btn btn-outline-light p-courses-btn fs-18 rounded-8 mb-0 mb-lg-2 me-2 me-lg-0">課程介紹</a>
+                                <a href="#" class="btn btn-gradient text-light p-courses-btn fs-18 rounded-8">立即預約</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer class="footer">
+      <div class="container-fluid py-4 font-mono text-center">
+        <span class="fs-7 d-lg-none">Coding Home © 2022 All Rights Reserved</span>
+        <span class="d-none d-lg-block">Coding Home © 2022 All Rights Reserved</span>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
